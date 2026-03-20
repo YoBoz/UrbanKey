@@ -1,0 +1,26 @@
+/* Minimal premium overrides to complement Tailwind utility classes */
+:root {
+  --navy: #0f172a;
+  --gold: #d97706;
+  --cream: #f8f1e3;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background-color: var(--cream);
+  color: var(--navy);
+}
+
+a,
+button {
+  transition: all 0.2s ease;
+}
+
+input:focus,
+textarea:focus {
+  box-shadow: 0 0 0 2px rgba(217, 119, 6, 0.15);
+}
