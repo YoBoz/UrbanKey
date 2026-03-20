@@ -3,12 +3,21 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>UrbanKey Concierge | Dubai Personal Concierge</title>
-    <meta name="description" content="UrbanKey Concierge is a Dubai-based personal concierge service for reservations, transfers, gifts, errands, and custom requests." />
-    <meta name="keywords" content="Dubai concierge, personal concierge, reservations, airport transfers, errands" />
-    <meta name="author" content="UrbanKey Concierge" />
-    <meta property="og:title" content="UrbanKey Concierge" />
-    <meta property="og:description" content="We handle the details so you don't have to." />
+    <title>UrbanKey | Dubai</title>
+    <meta
+      name="description"
+      content="UrbanKey is a Dubai-based general trading company focused on sourcing, import/export, wholesale, procurement, and reliable trade execution."
+    />
+    <meta
+      name="keywords"
+      content="Dubai general trading, import export Dubai, wholesale trading UAE, procurement services Dubai, product sourcing"
+    />
+    <meta name="author" content="UrbanKey" />
+    <meta property="og:title" content="UrbanKey | Dubai" />
+    <meta
+      property="og:description"
+      content="General Trading. Sourcing, import/export, wholesale, procurement, and custom order support."
+    />
     <meta property="og:type" content="website" />
     <meta name="theme-color" content="#0F172A" />
 
@@ -23,133 +32,251 @@
               cream: "#F8F1E3"
             },
             boxShadow: {
-              soft: "0 10px 30px rgba(15, 23, 42, 0.08)"
+              soft: "0 10px 30px rgba(15, 23, 42, 0.12)",
+              glow: "0 10px 26px rgba(217, 119, 6, 0.2)"
             }
           }
         }
       };
     </script>
-
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
-  <body class="bg-cream text-navy antialiased">
-    <header class="sticky top-0 z-40 border-b border-navy/10 bg-cream/95 backdrop-blur">
+  <body class="bg-cream text-navy antialiased selection:bg-gold/20">
+    <header class="fixed inset-x-0 top-0 z-50 border-b border-white/10 bg-navy/70 backdrop-blur-xl">
       <nav class="mx-auto flex w-full max-w-7xl items-center justify-between px-6 py-4 lg:px-10" aria-label="Main navigation">
-        <a href="#hero" class="text-lg font-semibold tracking-tight">UrbanKey Concierge</a>
+        <a href="#hero" class="flex items-center gap-3 text-cream">
+          <img src="./logo.png" alt="UrbanKey logo" class="h-14 w-auto sm:h-16" />
+          <span class="text-base font-semibold tracking-wide sm:text-lg">UrbanKey</span>
+        </a>
 
-        <button id="menuToggle" class="inline-flex items-center justify-center rounded-md border border-navy/20 p-2 text-navy md:hidden" aria-controls="mobileMenu" aria-expanded="false" aria-label="Toggle menu">
+        <button
+          id="menuToggle"
+          class="inline-flex items-center justify-center rounded-md border border-cream/30 p-2 text-cream md:hidden"
+          aria-controls="mobileMenu"
+          aria-expanded="false"
+          aria-label="Toggle menu"
+        >
           <span class="sr-only">Open menu</span>
-          <span class="block h-0.5 w-5 bg-navy"></span>
-          <span class="mt-1 block h-0.5 w-5 bg-navy"></span>
-          <span class="mt-1 block h-0.5 w-5 bg-navy"></span>
+          <span class="block h-0.5 w-5 bg-cream"></span>
+          <span class="mt-1 block h-0.5 w-5 bg-cream"></span>
+          <span class="mt-1 block h-0.5 w-5 bg-cream"></span>
         </button>
 
         <div class="hidden items-center gap-8 md:flex">
-          <a href="#services" class="text-sm font-medium hover:text-gold">Services</a>
-          <a href="#how-it-works" class="text-sm font-medium hover:text-gold">How it Works</a>
-          <a href="#contact" class="text-sm font-medium hover:text-gold">Contact</a>
-          <a href="https://wa.me/971XXXXXXXXX?text=Hello%20UrbanKey%20Concierge%2C%20I%20would%20like%20to%20make%20a%20request." class="rounded-md bg-navy px-4 py-2 text-sm font-medium text-cream hover:bg-navy/90">WhatsApp</a>
+          <a href="#services" class="text-sm font-medium text-cream/90 transition hover:text-gold">Services</a>
+          <a href="#how-it-works" class="text-sm font-medium text-cream/90 transition hover:text-gold">How It Works</a>
+          <a href="#contact" class="text-sm font-medium text-cream/90 transition hover:text-gold">Contact</a>
+          <a
+            data-wa
+            href="https://wa.me/971561093935?text=Hello%20UrbanKey%2C%20I%20have%20a%20general%20trading%20enquiry."
+            class="premium-btn rounded-md border border-gold/60 bg-gold/10 px-4 py-2 text-sm font-medium text-cream"
+            >WhatsApp</a
+          >
         </div>
       </nav>
 
-      <div id="mobileMenu" class="hidden border-t border-navy/10 px-6 py-4 md:hidden">
+      <div id="mobileMenu" class="hidden border-t border-white/15 px-6 py-4 md:hidden">
         <div class="flex flex-col gap-4">
-          <a href="#services" class="text-sm font-medium">Services</a>
-          <a href="#how-it-works" class="text-sm font-medium">How it Works</a>
-          <a href="#contact" class="text-sm font-medium">Contact</a>
-          <a href="https://wa.me/971XXXXXXXXX?text=Hello%20UrbanKey%20Concierge%2C%20I%20would%20like%20to%20make%20a%20request." class="inline-flex w-fit rounded-md bg-navy px-4 py-2 text-sm font-medium text-cream">WhatsApp</a>
+          <a href="#services" class="text-sm font-medium text-cream/90">Services</a>
+          <a href="#how-it-works" class="text-sm font-medium text-cream/90">How It Works</a>
+          <a href="#contact" class="text-sm font-medium text-cream/90">Contact</a>
+          <a
+            data-wa
+            href="https://wa.me/971561093935?text=Hello%20UrbanKey%2C%20I%20have%20a%20general%20trading%20enquiry."
+            class="premium-btn inline-flex w-fit rounded-md border border-gold/60 bg-gold/10 px-4 py-2 text-sm font-medium text-cream"
+            >WhatsApp</a
+          >
         </div>
       </div>
     </header>
 
     <main>
-      <section id="hero" class="mx-auto max-w-7xl px-6 pb-20 pt-20 lg:px-10 lg:pt-28">
-        <div class="max-w-3xl space-y-8">
-          <p class="text-sm uppercase tracking-[0.16em] text-gold">Dubai Personal Concierge</p>
-          <h1 class="text-4xl font-semibold leading-tight sm:text-5xl lg:text-6xl">UrbanKey Concierge</h1>
-          <p class="text-xl leading-relaxed text-navy/85 sm:text-2xl">We handle the details so you don't have to.</p>
-          <p class="max-w-2xl text-base leading-8 text-navy/80 sm:text-lg">Dinner reservations. Airport transfers. Gifts. Errands. Weekend plans. Personal shopping. Send us your enquiry and we will handle it.</p>
-          <p class="text-base font-medium text-navy">Just tell us what you need. We sort it quickly and reliably.</p>
-          <div class="flex flex-col gap-4 sm:flex-row">
-            <a href="#contact" class="rounded-md bg-navy px-7 py-3 text-center text-sm font-medium text-cream transition hover:bg-navy/90">Send Your Enquiry</a>
-            <a href="https://wa.me/971XXXXXXXXX?text=Hello%20UrbanKey%20Concierge%2C%20I%20need%20assistance%20with%20a%20request." class="rounded-md border border-navy/20 px-7 py-3 text-center text-sm font-medium hover:border-gold hover:text-gold">Chat on WhatsApp</a>
+      <section id="hero" class="hero-shell relative flex min-h-screen items-end overflow-hidden pt-20">
+        <img
+          src="https://images.pexels.com/photos/3183198/pexels-photo-3183198.jpeg?auto=compress&cs=tinysrgb&w=3840&h=2160&dpr=1"
+          alt="Premium global trade and logistics planning"
+          class="hero-image absolute inset-0 h-full w-full object-cover"
+        />
+        <div class="hero-overlay absolute inset-0"></div>
+
+        <div class="relative mx-auto w-full max-w-7xl px-6 pb-20 lg:px-10 lg:pb-28">
+          <div class="max-w-3xl space-y-7 text-cream reveal">
+            <p class="text-xs uppercase tracking-[0.24em] text-gold/90">Dubai General Trading</p>
+            <h1 class="text-4xl font-semibold leading-tight sm:text-5xl lg:text-7xl">UrbanKey</h1>
+            <p class="text-xl leading-relaxed text-cream/90 sm:text-2xl">General Trading</p>
+            <p class="max-w-2xl text-base leading-8 text-cream/85 sm:text-lg">
+              Product sourcing. Import &amp; export. Wholesale &amp; bulk trading. Market procurement. Custom
+              orders. Send us your enquiry and we will handle it.
+            </p>
+            <p class="text-base font-medium tracking-wide text-cream">
+              Just tell us what you need. We source it, trade it, and deliver reliably across Dubai and beyond.
+            </p>
+            <div class="flex flex-col gap-4 pt-2 sm:flex-row">
+              <a
+                data-wa
+                href="https://wa.me/971561093935?text=Hello%20UrbanKey%2C%20I%20want%20to%20send%20a%20trading%20enquiry."
+                class="premium-btn rounded-md bg-cream px-7 py-3 text-center text-sm font-medium text-navy"
+                >Send Your Enquiry</a
+              >
+              <a
+                data-wa
+                href="https://wa.me/971561093935?text=Hello%20UrbanKey%2C%20I%20want%20to%20chat%20about%20trading%20services."
+                class="premium-btn rounded-md border border-cream/35 bg-white/5 px-7 py-3 text-center text-sm font-medium text-cream"
+                >Chat on WhatsApp</a
+              >
+            </div>
           </div>
         </div>
       </section>
 
-      <section id="services" class="mx-auto max-w-7xl px-6 py-20 lg:px-10">
-        <h2 class="text-3xl font-semibold sm:text-4xl">What We Handle For You</h2>
-        <div class="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-          <article class="rounded-xl border border-navy/10 bg-white/60 p-6 shadow-soft">Dinner Reservations &amp; Restaurant Bookings</article>
-          <article class="rounded-xl border border-navy/10 bg-white/60 p-6 shadow-soft">Airport Transfers &amp; VIP Pickups</article>
-          <article class="rounded-xl border border-navy/10 bg-white/60 p-6 shadow-soft">Gift Shopping &amp; Delivery</article>
-          <article class="rounded-xl border border-navy/10 bg-white/60 p-6 shadow-soft">Personal Errands &amp; Concierge Tasks</article>
-          <article class="rounded-xl border border-navy/10 bg-white/60 p-6 shadow-soft">Weekend Plans &amp; Custom Itineraries</article>
-          <article class="rounded-xl border border-navy/10 bg-white/60 p-6 shadow-soft">Personal Shopping &amp; Purchases</article>
-          <article class="rounded-xl border border-navy/10 bg-white/60 p-6 shadow-soft sm:col-span-2 lg:col-span-1">General Requests</article>
+      <section id="services" class="mx-auto max-w-7xl px-6 py-24 lg:px-10">
+        <div class="reveal">
+          <h2 class="text-3xl font-semibold sm:text-4xl">What We Handle For You</h2>
         </div>
+        <div class="services-carousel reveal mt-10 overflow-hidden rounded-2xl border border-navy/10 bg-white/65 shadow-soft" aria-label="Services slideshow">
+          <button id="servicesPrev" class="carousel-arrow carousel-arrow-left" aria-label="Previous service">&larr;</button>
+          <button id="servicesNext" class="carousel-arrow carousel-arrow-right" aria-label="Next service">&rarr;</button>
+
+          <div id="servicesTrack" class="services-track flex">
+            <article class="service-slide relative h-[300px] w-full flex-none sm:h-[340px] lg:h-[400px]">
+              <img src="https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=3840&h=2160&dpr=1" alt="Product sourcing and supplier planning" class="h-full w-full object-cover" loading="lazy" />
+              <div class="slide-overlay absolute inset-0"></div>
+              <div class="absolute bottom-0 p-8 text-cream"><h3 class="text-2xl font-medium">Product Sourcing &amp; Global Supplier Matching</h3></div>
+            </article>
+            <article class="service-slide relative h-[300px] w-full flex-none sm:h-[340px] lg:h-[400px]">
+              <img src="https://images.pexels.com/photos/4481329/pexels-photo-4481329.jpeg?auto=compress&cs=tinysrgb&w=3840&h=2160&dpr=1" alt="Import and export documentation workflow" class="h-full w-full object-cover" loading="lazy" />
+              <div class="slide-overlay absolute inset-0"></div>
+              <div class="absolute bottom-0 p-8 text-cream"><h3 class="text-2xl font-medium">Import &amp; Export Coordination</h3></div>
+            </article>
+            <article class="service-slide relative h-[300px] w-full flex-none sm:h-[340px] lg:h-[400px]">
+              <img src="https://images.pexels.com/photos/5025503/pexels-photo-5025503.jpeg?auto=compress&cs=tinysrgb&w=3840&h=2160&dpr=1" alt="Wholesale and bulk goods inventory" class="h-full w-full object-cover" loading="lazy" />
+              <div class="slide-overlay absolute inset-0"></div>
+              <div class="absolute bottom-0 p-8 text-cream"><h3 class="text-2xl font-medium">Wholesale &amp; Bulk Trading</h3></div>
+            </article>
+            <article class="service-slide relative h-[300px] w-full flex-none sm:h-[340px] lg:h-[400px]">
+              <img src="https://images.pexels.com/photos/590016/pexels-photo-590016.jpeg?auto=compress&cs=tinysrgb&w=3840&h=2160&dpr=1" alt="Market research and procurement strategy" class="h-full w-full object-cover" loading="lazy" />
+              <div class="slide-overlay absolute inset-0"></div>
+              <div class="absolute bottom-0 p-8 text-cream"><h3 class="text-2xl font-medium">Market Research &amp; Procurement</h3></div>
+            </article>
+            <article class="service-slide relative h-[300px] w-full flex-none sm:h-[340px] lg:h-[400px]">
+              <img src="https://images.pexels.com/photos/5668772/pexels-photo-5668772.jpeg?auto=compress&cs=tinysrgb&w=3840&h=2160&dpr=1" alt="Custom manufacturing order support" class="h-full w-full object-cover" loading="lazy" />
+              <div class="slide-overlay absolute inset-0"></div>
+              <div class="absolute bottom-0 p-8 text-cream"><h3 class="text-2xl font-medium">Custom Orders &amp; Manufacturing Support</h3></div>
+            </article>
+            <article class="service-slide relative h-[300px] w-full flex-none sm:h-[340px] lg:h-[400px]">
+              <img src="https://images.pexels.com/photos/5025643/pexels-photo-5025643.jpeg?auto=compress&cs=tinysrgb&w=3840&h=2160&dpr=1" alt="General trading requests handling" class="h-full w-full object-cover" loading="lazy" />
+              <div class="slide-overlay absolute inset-0"></div>
+              <div class="absolute bottom-0 p-8 text-cream"><h3 class="text-2xl font-medium">General Trading Requests</h3></div>
+            </article>
+            <article class="service-slide relative h-[300px] w-full flex-none sm:h-[340px] lg:h-[400px]">
+              <img src="https://images.pexels.com/photos/2199293/pexels-photo-2199293.jpeg?auto=compress&cs=tinysrgb&w=3840&h=2160&dpr=1" alt="Logistics and delivery coordination" class="h-full w-full object-cover" loading="lazy" />
+              <div class="slide-overlay absolute inset-0"></div>
+              <div class="absolute bottom-0 p-8 text-cream"><h3 class="text-2xl font-medium">Logistics &amp; Delivery Coordination</h3></div>
+            </article>
+          </div>
+        </div>
+        <div id="servicesDots" class="mt-5 flex items-center justify-center gap-2"></div>
       </section>
 
-      <section id="how-it-works" class="mx-auto max-w-7xl px-6 py-20 lg:px-10">
-        <h2 class="text-3xl font-semibold sm:text-4xl">How It Works</h2>
+      <section id="how-it-works" class="mx-auto max-w-7xl px-6 py-24 lg:px-10">
+        <div class="reveal">
+          <h2 class="text-3xl font-semibold sm:text-4xl">How It Works</h2>
+        </div>
         <div class="mt-10 grid gap-6 md:grid-cols-3">
-          <div class="rounded-xl border border-navy/10 bg-white/60 p-6">
-            <p class="text-xs font-semibold uppercase tracking-widest text-gold">Step 1</p>
-            <p class="mt-3 leading-7">Send us your request via form or WhatsApp.</p>
-          </div>
-          <div class="rounded-xl border border-navy/10 bg-white/60 p-6">
-            <p class="text-xs font-semibold uppercase tracking-widest text-gold">Step 2</p>
-            <p class="mt-3 leading-7">We confirm and handle everything.</p>
-          </div>
-          <div class="rounded-xl border border-navy/10 bg-white/60 p-6">
-            <p class="text-xs font-semibold uppercase tracking-widest text-gold">Step 3</p>
-            <p class="mt-3 leading-7">You relax.</p>
-          </div>
-        </div>
-      </section>
+          <article class="reveal rounded-xl border border-navy/10 bg-white/70 p-7">
+            <p class="text-xs font-semibold uppercase tracking-[0.2em] text-gold">1</p>
+            <p class="mt-4 leading-7">Send us your trading request via form or WhatsApp.</p>
+          </article>
+          <article class="reveal rounded-xl border border-navy/10 bg-white/70 p-7">
+            <p class="text-xs font-semibold uppercase tracking-[0.2em] text-gold">2</p>
+            <p class="mt-4 leading-7">We source, coordinate and handle everything.</p>
+           </article>
+          <article class="reveal rounded-xl border border-navy/10 bg-white/70 p-7">
+            <p class="text-xs font-semibold uppercase tracking-[0.2em] text-gold">3</p>
+            <p class="mt-4 leading-7">You receive - job done.</p>
+          </article>
+         </div>
+       </section>
 
-      <section class="mx-auto max-w-7xl px-6 py-20 lg:px-10">
-        <h2 class="text-3xl font-semibold sm:text-4xl">Why Choose Us</h2>
-        <ul class="mt-10 divide-y divide-navy/10 rounded-xl border border-navy/10 bg-white/60">
-          <li class="px-6 py-5">No contracts, no minimums</li>
-          <li class="px-6 py-5">Pay only for what we do</li>
-          <li class="px-6 py-5">We tell you straight if we cannot help</li>
-          <li class="px-6 py-5">Fast, reliable, Dubai-based</li>
+      <section class="mx-auto max-w-7xl px-6 py-24 lg:px-10">
+        <div class="reveal">
+          <h2 class="text-3xl font-semibold sm:text-4xl">Why Choose Us</h2>
+        </div>
+        <ul class="mt-10 rounded-xl border border-navy/10 bg-white/70">
+          <li class="reveal border-b border-gold/30 px-6 py-5">No contracts, no minimums</li>
+          <li class="reveal border-b border-gold/30 px-6 py-5">Pay only for what we deliver</li>
+          <li class="reveal border-b border-gold/30 px-6 py-5">We tell you straight if we cannot help</li>
+          <li class="reveal px-6 py-5">Fast, reliable, Dubai-based general trading</li>
         </ul>
       </section>
 
-      <section id="contact" class="mx-auto max-w-7xl px-6 py-20 lg:px-10">
-        <div class="grid gap-10 rounded-2xl border border-navy/10 bg-white/70 p-8 shadow-soft md:grid-cols-2 md:p-10">
+      <section id="contact" class="mx-auto max-w-7xl px-6 pb-24 pt-20 lg:px-10">
+        <div class="reveal grid gap-10 rounded-2xl border border-navy/10 bg-white/80 p-8 shadow-soft md:grid-cols-2 md:p-12">
           <div>
             <h2 class="text-3xl font-semibold sm:text-4xl">Send Us Your Enquiry</h2>
-            <p class="mt-4 max-w-md leading-7 text-navy/80">Send us your enquiries and we will handle it. Share your request in a few lines and we will respond quickly.</p>
+            <p class="mt-4 max-w-md leading-7 text-navy/80">
+              Send us your enquiries and we will handle it. Share your requirement and we will respond promptly.
+            </p>
           </div>
 
           <form id="enquiryForm" class="space-y-4" novalidate>
             <label class="block">
               <span class="mb-2 block text-sm font-medium">Name</span>
-              <input id="name" name="name" type="text" class="w-full rounded-md border border-navy/20 bg-white px-4 py-3 outline-none ring-0 placeholder:text-navy/40 focus:border-gold" placeholder="Your full name" required />
+              <input
+                id="name"
+                name="name"
+                type="text"
+                class="w-full rounded-md border border-navy/20 bg-white px-4 py-3 placeholder:text-navy/45 focus:border-gold focus:outline-none"
+                placeholder="Your full name"
+                required
+              />
             </label>
             <label class="block">
               <span class="mb-2 block text-sm font-medium">Phone/WhatsApp Number</span>
-              <input id="phone" name="phone" type="tel" class="w-full rounded-md border border-navy/20 bg-white px-4 py-3 outline-none ring-0 placeholder:text-navy/40 focus:border-gold" placeholder="+971" required />
+              <input
+                id="phone"
+                name="phone"
+                type="tel"
+                class="w-full rounded-md border border-navy/20 bg-white px-4 py-3 placeholder:text-navy/45 focus:border-gold focus:outline-none"
+                placeholder="+971"
+                required
+              />
             </label>
             <label class="block">
-              <span class="mb-2 block text-sm font-medium">What do you need?</span>
-              <textarea id="request" name="request" rows="4" class="w-full rounded-md border border-navy/20 bg-white px-4 py-3 outline-none ring-0 placeholder:text-navy/40 focus:border-gold" placeholder="Tell us your request" required></textarea>
+              <span class="mb-2 block text-sm font-medium">What do you need? (Trading / Sourcing / Procurement)</span>
+              <textarea
+                id="request"
+                name="request"
+                rows="4"
+                class="w-full rounded-md border border-navy/20 bg-white px-4 py-3 placeholder:text-navy/45 focus:border-gold focus:outline-none"
+                placeholder="Tell us what product or trade support you need"
+                required
+              ></textarea>
             </label>
-            <button type="submit" class="w-full rounded-md bg-navy px-6 py-3 text-sm font-medium text-cream transition hover:bg-navy/90">Send Enquiry</button>
-            <p id="formMessage" class="hidden rounded-md border border-green-700/20 bg-green-50 px-4 py-3 text-sm text-green-800" role="status" aria-live="polite"></p>
+            <button id="submitBtn" type="submit" class="premium-btn w-full rounded-md bg-navy px-6 py-3 text-sm font-medium text-cream">Send Enquiry</button>
+            <p
+              id="formMessage"
+              class="hidden rounded-md border border-green-700/25 bg-green-50 px-4 py-3 text-sm text-green-800"
+              role="status"
+              aria-live="polite"
+            ></p>
           </form>
         </div>
       </section>
     </main>
 
     <footer class="border-t border-navy/10 px-6 py-8 text-center text-sm text-navy/70 lg:px-10">
-      <p>&copy; 2026 UrbanKey Concierge • Dubai, UAE</p>
+      <p>&copy; 2026 UrbanKey • Dubai, UAE</p>
     </footer>
 
-    <a id="floatingWhatsApp" href="https://wa.me/971XXXXXXXXX?text=Hello%20UrbanKey%20Concierge%2C%20I%20have%20an%20enquiry." class="fixed bottom-5 right-5 z-50 rounded-full bg-[#25D366] px-5 py-3 text-sm font-semibold text-white shadow-lg transition hover:brightness-95" aria-label="Chat on WhatsApp">WhatsApp</a>
+    <a
+      id="floatingWhatsApp"
+      data-wa
+      href="https://wa.me/971561093935?text=Hello%20UrbanKey%2C%20I%20have%20a%20general%20trading%20enquiry."
+      class="whatsapp-float fixed bottom-5 right-5 z-50 rounded-full bg-[#25D366] px-5 py-3 text-sm font-semibold text-white shadow-lg"
+      aria-label="Chat on WhatsApp"
+      >WhatsApp</a
+    >
 
     <script src="./js/script.js"></script>
   </body>

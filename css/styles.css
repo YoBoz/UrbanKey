@@ -1,4 +1,4 @@
-/* Minimal premium overrides to complement Tailwind utility classes */
+/* Premium trading visual system: restrained luxury, calm motion, clear hierarchy. */
 :root {
   --navy: #0f172a;
   --gold: #d97706;
@@ -10,17 +10,161 @@ html {
 }
 
 body {
-  font-family: "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Avenir Next", "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  letter-spacing: 0.01em;
   background-color: var(--cream);
   color: var(--navy);
 }
 
+.hero-shell {
+  background: var(--navy);
+}
+
+.hero-image {
+  transform: scale(1.02);
+  animation: heroSettle 1.5s ease-out both;
+}
+
+.hero-overlay {
+  background: linear-gradient(120deg, rgba(15, 23, 42, 0.84) 0%, rgba(15, 23, 42, 0.56) 50%, rgba(15, 23, 42, 0.32) 100%);
+}
+
+.premium-btn,
+.service-card,
 a,
 button {
-  transition: all 0.2s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+}
+
+.premium-btn:hover,
+.premium-btn:focus-visible {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 28px rgba(217, 119, 6, 0.2);
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  border-color: rgba(217, 119, 6, 0.45);
+  box-shadow: 0 16px 32px rgba(15, 23, 42, 0.12), 0 6px 18px rgba(217, 119, 6, 0.18);
+}
+
+.services-carousel {
+  position: relative;
+  max-width: 1360px;
+  margin-inline: auto;
+}
+
+.services-track {
+  will-change: transform;
+  transition: transform 0.65s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.slide-overlay {
+  background: linear-gradient(180deg, rgba(15, 23, 42, 0.15) 0%, rgba(15, 23, 42, 0.82) 100%);
+}
+
+.carousel-arrow {
+  position: absolute;
+  top: 50%;
+  z-index: 10;
+  height: 42px;
+  width: 42px;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.45);
+  background: rgba(15, 23, 42, 0.45);
+  color: #f8f1e3;
+  font-size: 1.1rem;
+  line-height: 1;
+  transform: translateY(-50%);
+  backdrop-filter: blur(4px);
+}
+
+.carousel-arrow:hover,
+.carousel-arrow:focus-visible {
+  background: rgba(15, 23, 42, 0.75);
+  border-color: rgba(217, 119, 6, 0.75);
+  box-shadow: 0 10px 26px rgba(217, 119, 6, 0.24);
+}
+
+.carousel-arrow-left {
+  left: 14px;
+}
+
+.carousel-arrow-right {
+  right: 14px;
+}
+
+.services-dot {
+  height: 8px;
+  width: 8px;
+  border-radius: 999px;
+  background: rgba(15, 23, 42, 0.25);
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.services-dot.is-active {
+  transform: scale(1.4);
+  background: rgba(217, 119, 6, 0.9);
 }
 
 input:focus,
 textarea:focus {
-  box-shadow: 0 0 0 2px rgba(217, 119, 6, 0.15);
+  box-shadow: 0 0 0 3px rgba(217, 119, 6, 0.14);
+}
+
+/* Reveal-on-scroll utility class toggled by IntersectionObserver. */
+.reveal {
+  opacity: 0;
+  transform: translateY(22px);
+  transition: opacity 0.85s cubic-bezier(0.22, 1, 0.36, 1), transform 0.85s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.reveal.in-view {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.whatsapp-float {
+  animation: pulseGlow 2.8s ease-in-out infinite;
+}
+
+@keyframes heroSettle {
+  from {
+    opacity: 0;
+    transform: scale(1.06);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1.02);
+  }
+}
+
+@keyframes pulseGlow {
+  0%,
+  100% {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.22), 0 0 0 0 rgba(37, 211, 102, 0.24);
+  }
+  50% {
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.24), 0 0 0 8px rgba(37, 211, 102, 0.08);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  .hero-image,
+  .whatsapp-float,
+  .reveal,
+  .premium-btn,
+  .service-card {
+    animation: none !important;
+    transition: none !important;
+  }
+
+  .reveal {
+    opacity: 1;
+    transform: none;
+  }
 }
